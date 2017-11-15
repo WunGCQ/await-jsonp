@@ -24,7 +24,7 @@ export function jsonp(url, params, errorFunc = alert) {
       }
       document.body.removeChild(script);
       setTimeout(function(){
-        delete window[temp];        
+        delete window[name];        
       },1000);
     };
     window[name] = temp;
